@@ -14,10 +14,10 @@ jobs:
     - name: Login to Docker Hub
       run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
     - name: Build the docker image
-      run: docker build -t firstapp:latest .
+      run: docker build -t firstapp2:latest .
     - name: Tag the image
-      run: docker tag firstapp:latest nabiazeenatzia/firstapp:latest
+      run: docker tag firstapp2:latest nabiazeenatzia/firstapp2:latest
     - name: Push the image
-      run: docker push nabiazeenatzia/firstapp:latest
+      run: docker push nabiazeenatzia/firstapp2:latest
 
 
