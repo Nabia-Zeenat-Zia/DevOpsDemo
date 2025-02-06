@@ -16,8 +16,8 @@ jobs:
     - name: Build the docker image
       run: docker build -t firstapp:latest .
     - name: Tag the image
-      run: docker tag firstapp:latest jawadc/firstapp:latest
+      run: docker tag firstapp:latest nabiazeenatzia/firstapp:latest
     - name: Push the image
-      run: docker push njawadc/firstapp:latest
+      run: docker push nabiazeenatzia/firstapp:latest
 
 
